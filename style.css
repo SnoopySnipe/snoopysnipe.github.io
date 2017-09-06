@@ -12,13 +12,13 @@
     background-size: cover;
 }
 
-.topnav {
+.topbar {
     background-color: rgba(0, 0, 0, 0.0);
     overflow: hidden;
 }
 
 
-.topnav a {
+.topbar a {
     /*Puts the options to the right*/
     float: right;
     display: block;
@@ -32,16 +32,16 @@
     margin-bottom: 5px;
 }
 
-.topnav a:hover {
+.topbar a:hover {
     background-color: #9932cc;
     color: #ffd700;
 }
 
-.topnav a.active {
+.topbar a.active {
     background-color: #9932cc;
     color: #ffd700;
 }
 
-.topnav .icon {
+.topbar .icon {
     display: none;
 }
