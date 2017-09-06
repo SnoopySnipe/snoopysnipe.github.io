@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.body {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(background.png);
+    background-size: cover;
+}
