@@ -22,14 +22,14 @@
     /*Puts the options to the right*/
     float: right;
     display: block;
-    color: #000000;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 25px;
     /*Move the options in the center*/
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .topbar a:hover {
@@ -44,4 +44,15 @@
 
 .topbar .icon {
     display: none;
+}
+
+b {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
 }
