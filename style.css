@@ -11,3 +11,37 @@
     background-image: url(background.png);
     background-size: cover;
 }
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.0);
+    overflow: hidden;
+}
+
+
+.topnav a {
+    /*Puts the options to the right*/
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    /*Move the options in the center*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.topnav a:hover {
+    background-color: #9932cc;
+    color: #ffd700;
+}
+
+.topnav a.active {
+    background-color: #9932cc;
+    color: #ffd700;
+}
+
+.topnav .icon {
+    display: none;
+}
