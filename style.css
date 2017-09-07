@@ -6,6 +6,7 @@
 .body {
     width: auto;
     height: auto;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(background.png);
@@ -13,7 +14,7 @@
 }
 
 .topbar {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 1.0);
     overflow: hidden;
 }
 
@@ -22,14 +23,15 @@
     /*Puts the options to the right*/
     float: right;
     display: block;
-    color: #fff;
+    color: #ffd700;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 25px;
     /*Move the options in the center*/
     margin-top: 0px;
     margin-bottom: 0px;
+    background-color: #15202B;
 }
 
 .topbar a:hover {
@@ -49,10 +51,64 @@
 b {
     float: left;
     display: block;
-    color: white;
+    color: #9932cc;
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 30px;
     font-family: sans-serif;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+        margin-left: 30px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+p {
+	color: #FFFFFF;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin-left: 35px;
+}
+
+h2 {
+	color: #ffd700;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 25px;
+	margin-left: 30px;
+}
+
+img {
+    padding: 0px;
+    height: 238.4px;
+    width: 200px;
+    display: block;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+h2:link {
+	color: #ffd700;
+}
+
+h2:hover {
+	color: #daa520;
+}
+
+h2:active {
+	color: #9932cc;
 }
