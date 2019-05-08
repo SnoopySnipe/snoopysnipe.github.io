@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" type ="text/css" href="../style.css">
+
+	<head>
+		<title>CSCC43 - Tutorial 1 | SnoopySnipe</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body class="body">
+
+		<div class="topbar" id="topbar">
+			<b><a href="../index.html" target="_self">Andrew Leung</a></b>
+			<a href="https://github.com/SnoopySnipe/" target="_blank">Github</a>
+			<a href="https://www.linkedin.com/in/andrew-leung-308b28127/" target="_blank">LinkedIn</a>
+			<a href="../projects.html" target="_self">Projects</a>
+			<a href="home.html" target="_self">CSCC43</a>
+		</div>
+		
+		<br>
+		<div>
+			<p>The following questions are taken from the course's required textbook and do not belong to me: H. G. Molina, J. Ullman, J. Widom : Database Systems The Complete Book, Pearson/Prentice Hall 2009.
+			<br>
+			<button onclick="hideShowDiv('q1');">Hide/Show Question 1</button>
+			<button onclick="hideShowDiv('q2');">Hide/Show Question 2</button>
+			<button onclick="hideShowDiv('q3');">Hide/Show Question 3</button>
+			<button onclick="hideShowDiv('q4');">Hide/Show Question 4</button>
+			</p>
+			<div id="q1" style="display:none">
+			<h1><strong><u>Q1: Page 138 - Exercise 4.1.1</u></strong></h1>
+			<p>
+			Design a database for a bank, including information about
+			customers and their accounts. Information about a customer includes their
+			name, address, phone, and Social Security number. Accounts have numbers,
+			types (e.g., savings, checking) and balances. Also record the customer(s) who
+			own an account. Draw the E /R diagram for this database. Be sure to include
+			arrows where appropriate, to indicate the multiplicity of a relationship.
+			</p>
+			</div>
+			<div id="q2" style="display:none">
+			<h1><strong><u>Q2: Page 138/139 - Exercise 4.1.2</u></strong></h1>
+			<p>
+			Modify your solution to Exercise 4.1.1 as follows:
+			<br>
+			a) Change your diagram so an account can have only one customer.
+			<br>
+			b) Further change your diagram so a customer can have only one account.
+			<br>
+			c) Change your original diagram of Exercise 4.1.1 so that a customer can
+			have a set of addresses (which are street-city-state triples) and a set of
+			phones. Remember that we do not allow attributes to have nonprimitive
+			types, such as sets, in the E /R model.
+			<br>
+			d) Further modify your diagram so that customers can have a set of addresses,
+			and at each address there is a set of phones.
+			</p>
+			</div>
+			<div id="q3" style="display:none">
+			<h1><strong><u>Q3: Page 139 - Exercise 4.1.3</u></strong></h1>
+			<p>
+			Give an E /R diagram for a database recording information
+			about teams, players, and their fans, including:
+			<br>
+			1. For each team, its name, its players, its team captain (one of its players),
+			and the colors of its uniform.
+			<br>
+			2. For each player, his/her name.
+			<br>
+			3. For each fan, his/her name, favorite teams, favorite players, and favorite
+			color.
+			<br>
+			Remember that a set of colors is not a suitable attribute type for teams. How
+			can you get around this restriction?
+			</p>
+			</div>
+			<div id="q4" style="display:none">
+			<h1><strong><u>Q4: Page 156 - Exercise 4.4.4</u></strong></h1>
+			<p>
+			Draw E /R diagrams for the following situations involving
+			weak entity sets. In each case indicate keys for entity sets.
+			<br>
+			a) Entity sets Courses and Departments. A course is given by a unique
+			department, but its only attribute is its number. Different departments
+			can offer courses with the same number. Each department has a unique
+			name.
+			<br>
+			b) Entity sets Leagues, Teams, and Players. League names are unique. No
+			league has two teams with the same name. No team has two players with
+			the same number. However, there can be players with the same number
+			on different teams, and there can be teams with the same name in different
+			leagues.
+			</p>
+			</div>
+		</div>
+
+	</body>
+	
+	<script>
+	function hideShowDiv(divName) {
+	  var x = document.getElementById(divName);
+	  if (x.style.display == "none") {
+		x.style.display = "block";
+	  } else {
+		x.style.display = "none";
+	  }
+	}
+	</script>
+
+</html>
