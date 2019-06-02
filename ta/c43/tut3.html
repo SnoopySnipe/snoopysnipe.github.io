@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" type ="text/css" href="../../style.css">
+
+	<head>
+		<title>CSCC43 - Tutorial 3 | SnoopySnipe</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body class="body">
+
+		<div class="topbar" id="topbar">
+			<b><a href="../../index.html" target="_self">Andrew Leung</a></b>
+			<a href="https://github.com/SnoopySnipe/" target="_blank">Github</a>
+			<a href="https://www.linkedin.com/in/andrew-leung-308b28127/" target="_blank">LinkedIn</a>
+			<a href="../../projects.html" target="_self">Projects</a>
+			<a href="../index.html" target="_self">TA</a>
+		</div>
+		
+		<br>
+		<div>
+			<p>The following questions are taken from the course's required textbook and do not belong to me - 
+			<br>
+			<ul>H. G. Molina, J. Ullman, J. Widom : Database Systems The Complete Book, Pearson/Prentice Hall 2009.</ul>
+			<br>
+			</p>
+			<p>
+			<button onclick="hideShowDiv('q1');">Hide/Show Question 1</button>
+			<button onclick="hideShowDiv('q2');">Hide/Show Question 2</button>
+			<button onclick="hideShowDiv('q3');">Hide/Show Question 3</button>
+			<button onclick="hideShowDiv('q4');">Hide/Show Question 4</button>
+			</p>
+			</p>
+			<div id="q1" style="display:none">
+			<h1><strong><u>Q1: Page 77 - Example 3.8</u></strong></h1>
+			<p>
+			Consider R(A, B, C, D, E) and S = {AB -> C, BC -> D, D -> E, CF -> B}.
+            What is the closure of {A, B}?
+			</p>
+			</div>
+			<div id="q2" style="display:none">
+			<h1><strong><u>Q2: Page 77 - Example 3.9</u></strong></h1>
+			<p>
+			Do the following functional dependencies follow from S in Example 3.8?
+            <br>
+            a) AB -> D
+            <br>
+            b) D -> A
+			</p>
+			</div>
+			<div id="q3" style="display:none">
+			<h1><strong><u>Q3: Page 83 - Exercise 3.2.2</u></strong></h1>
+			<p>
+			Consider the following schemas and set of functional dependencies:
+            <br>
+            i) S(A, B, C, D) with FDs A -> B, B -> C, B -> D
+            <br>
+            ii) T(A, B, C, D) with FDs AB -> C, BC -> D, CD -> A, AD -> B
+            <br>
+            iii) U(A, B, C, D) with FDs A -> B, B -> C, C -> D, D -> A
+            <br><br>
+            Answer the following questions for each:
+            <br>
+            a) What are all the nontrivial FD’s that follow from the given FD’s? You
+            should restrict yourself to FD’s with single attributes on the right side.
+            <br>
+            b) What are all the keys of R?
+            <br>
+            c) What are all the superkeys for R that are not keys?
+			</p>
+			</div>
+			<div id="q4" style="display:none">
+			<h1><strong><u>Q4: Page 85 - Exercise 3.2.10</u></strong></h1>
+			<p>
+			Suppose we have relation R(A ,B ,C ,D ,E), with some set
+            of FDs, and we wish to project those FDs onto relation S(A, B, C). Give the
+            FDs that hold in S if the FDs for R are:
+            <br>
+            a) AB -> DE, C -> E, D -> C, E -> A
+            <br>
+            b) A -> D, BD -> E, AC -> E, DE -> B
+            <br>
+            c) AB -> D, AC -> E, BC -> D, D -> A, E -> B
+            <br>
+            d) A -> B, B -> C, C -> D, D -> E, E -> A
+            <br>
+            In each case, it is sufficient to give a minimal basis for the full set of FDs of S.
+			</p>
+			</div>
+		</div>
+
+	</body>
+	
+	<script>
+	function hideShowDiv(divName) {
+	  var x = document.getElementById(divName);
+	  if (x.style.display == "none") {
+		x.style.display = "block";
+	  } else {
+		x.style.display = "none";
+	  }
+	}
+	</script>
+
+</html>
