@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" type ="text/css" href="../../style.css">
+
+	<head>
+		<title>CSCC43 - Tutorial 4 | SnoopySnipe</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body class="body">
+
+		<div class="topbar" id="topbar">
+			<b><a href="../../index.html" target="_self">Andrew Leung</a></b>
+			<a href="https://github.com/SnoopySnipe/" target="_blank">Github</a>
+			<a href="https://www.linkedin.com/in/andrew-leung-308b28127/" target="_blank">LinkedIn</a>
+			<a href="../../projects.html" target="_self">Projects</a>
+			<a href="../index.html" target="_self">TA</a>
+		</div>
+		
+		<br>
+		<div>
+			<p>
+			<button onclick="hideShowDiv('q1');">Hide/Show Question 1</button>
+			<button onclick="hideShowDiv('q2');">Hide/Show Question 2</button>
+			<button onclick="hideShowDiv('q3');">Hide/Show Question 3</button>
+			<button onclick="hideShowDiv('q4');">Hide/Show Question 4</button>
+			</p>
+			</p>
+			<div id="q1" style="display:none">
+			<h1><strong><u>Question 1</u></strong></h1>
+			<p>
+			Given Figure 3.6 on Page 86 of the Textbook and FDs title year star -> length genre studio, and title year -> length genre studio, convert this table into BCNF. Your answer should look like the table in Figure 3.7 on Page 87.
+			</p>
+			</div>
+			<div id="q2" style="display:none">
+			<h1><strong><u>Q2: Page 103/104 - Example 3.27</u></strong></h1>
+			<p>
+			Given R(A, B, C, D, E) and FDs AB -> C, C -> B, and A -> D. Convert R to 3NF.
+			</p>
+			</div>
+			<div id="q3" style="display:none">
+			<h1><strong><u>Question 3</u></strong></h1>
+			<p>
+			Given R(A, B, C, D, E) and FDs A -> BC, CD -> E, E -> A, and B -> D. Convert R to BCNF.
+			</p>
+			</div>
+			<div id="q4" style="display:none">
+			<h1><strong><u>Question 4</u></strong></h1>
+			<p>
+			Given the answer to Question 1, write a relational algebra that gives the information: Genres and Movie Stars but only for movies after 1960.
+			</p>
+			</div>
+		</div>
+
+	</body>
+	
+	<script>
+	function hideShowDiv(divName) {
+	  var x = document.getElementById(divName);
+	  if (x.style.display == "none") {
+		x.style.display = "block";
+	  } else {
+		x.style.display = "none";
+	  }
+	}
+	</script>
+
+</html>
