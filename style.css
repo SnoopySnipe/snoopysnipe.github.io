@@ -142,16 +142,16 @@ c {
 	margin-left: 25px;
 }
 
-button {
+.btn {
     color: #FFFFFF;
     background: #2C2F33;
     border: 2px #ffd700 solid;
 }
 
-button:hover {
+.btn:hover {
     background: #ffd700;
 }
 
-button:active {
+.btn:active {
     background: #ffd700;
 }
