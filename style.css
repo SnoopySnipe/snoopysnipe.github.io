@@ -142,5 +142,16 @@ c {
 	margin-left: 25px;
 }
 
+button {
+    color: #FFFFFF;
+    background: #2C2F33;
+    border: 2px #ffd700 solid;
+}
 
+button:hover {
+    background: #ffd700;
+}
 
+button:active {
+    background: #ffd700;
+}
