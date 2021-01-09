@@ -1,0 +1,133 @@
+header{
+    display: flex;
+    height: 10%;
+    background-color: #23272A;
+    font-size: 150%;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+}
+
+.header_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_row > *{
+    margin: 1% 2% 1% 2%;
+}
+
+#teaching_tab{
+    cursor: pointer;
+}
+
+a{
+    color: #9932CC;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFD700;
+}
+
+body{
+    margin: auto;
+    background-color: #2C2F33;
+    color: #FFFFFF;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 100%;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    margin: auto;
+    width: 75%;
+    padding-top: 2%;
+}
+
+.content_item{
+    margin-bottom: 5%;
+}
+
+.projects_contributions{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects_contributions_items{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px solid #9932CC;
+    border-radius: 10%;
+}
+.projects_contributions_items:hover{
+    border-color: #FFD700;
+}
+
+.projects_contributions_icons{
+    width: 200px;
+    height: 200px;
+    border-radius: 10% 10% 0% 0%;
+    margin-bottom: 5%;
+}
+
+.projects_contributions_screen{
+    margin-bottom: 5%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 5px solid #9932CC;
+}
+
+.projects_contributions_screen:hover{
+    border-color: #FFD700;
+}
+
+#profile_pic{
+    width: 200px;
+    height: 200px;
+}
+
+#profile_icon{
+    align-items: center;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile_details{
+    max-width: 50%;
+}
+
+p{
+    margin-left: 5%;
+}
+
+#profile_contact{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#profile_contact > *{
+    margin: 0% 5% 0% 5%;
+}
+
+.svg_icon{
+    width: 30px;
+    height: 30px;
+}
+svg{
+    fill: #9932CC;
+}
+svg:hover{
+    fill: #FFD700;
+}

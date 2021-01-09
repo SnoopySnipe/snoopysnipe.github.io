@@ -1,100 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Tutorial 5 - CSCC43S19 | SnoopySnipe</title>
+    <link href="../../style/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <div class="header_row">
+            <a href="../../index.html" target="_self">HOME</a>
+            <a href="../../resume.html" target="_self">RESUME</a>
+            <a href="../../projects.html" target="_self">PROJECTS & CONTRIBUTIONS</a>
+            <a id="teaching_tab">TEACHING</a>
+        </div>
+        <div class="header_row" id="teaching_options" style="display:none">
+            <a href="../c43s19/index.html" target="_self">C43 S19</a>
+            <a href="../c43f19/index.html" target="_self">C43 F19</a>
+            <a href="../c43f20/index.html" target="_self">C43 F20</a>
+            <a href="../c37f20/index.html" target="_self">C37 F20</a>
+            <a href="../b63f20/index.html" target="_self">B63 F20</a>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="content_item">
+        For the following questions, assume you have the relations:
+        <p>
+        <ul>
+			<li>BOOKS(DocId, Title, Publisher, Year)</li>
+			<li>STUDENTS(StId, StName, Major, Age)</li>
+            <li>AUTHORS(AName, Address)</li>
+            <li>borrows(DocId, StId, Date)</li>
+            <li>has-written(DocId, AName)</li>
+            <li>describes(DocId, Keyword)</li>
+        </ul>
+        </p>
+        <h2>Simple Relational Algebra Exercises</h2>
+        <p>
+        <ul>
+			<li>List the year and title of each book</li>
+			<li>List all information about students whose major is CS</li>
+            <li>List all students with the books they can borrow</li>
+            <li>List all boox published by McGraw-Hill before 1990</li>
+            <li>List the name of those authors who are living in Davis</li>
+            <li>List the name of students who are older than 30 and who are not studying CS</li>
+            <li>Rename AName in the relation AUTHORS to Name</li>
+        </ul>
+        </p>
+        <h2>Composed Query Exercises</h2>
+        <p>
+        <ul>
+			<li>List the names of all students who have borrowed a book and who are CS majors</li>
+			<li>List the title of books written by the author 'Silberschatz'</li>
+            <li>Find the name of the youngest student</li>
+            <li>Find the title of the oldest book</li>
+        </ul>
+        </p>
+        <h2>More Difficult Relational Algebra Exercises</h2>
+        <p>
+        <ul>
+			<li>List each book with its keywords</li>
+			<li>List each student with the books he/she has borrowed</li>
+            <li>List the title of books written by the author 'Ullman'</li>
+            <li>List the authors of the books the student 'Smith' has borrowed</li>
+            <li>Which books have both keywords 'database' and 'programming'</li>
+            <li>Perform Query 4 but using assignments</li>
+        </ul>
+        </p>
+        </div>
+    </div>
 
-	<link rel="stylesheet" type ="text/css" href="/style.css">
-
-	<head>
-		<title>CSCC43S19 - Tutorial 5 | SnoopySnipe</title>
-		<meta charset="utf-8">
-	</head>
-
-	<body class="body">
-
-		<div class="topbar" id="topbar">
-			<b><a href="/index.html" target="_self">Andrew Leung</a></b>
-			<a href="https://github.com/SnoopySnipe/" target="_blank">Github</a>
-			<a href="https://www.linkedin.com/in/andrew-yue-keung-leung/" target="_blank">LinkedIn</a>
-			<a href="/projects.html" target="_self">Projects</a>
-			<a href="/ta/index.html" target="_self">TA</a>
-		</div>
-		
-		<br>
-		<div>
-            <p>For the following questions, assume you have the relations:
-			<br>
-			<ul>BOOKS(DocId, Title, Publisher, Year)</ul>
-            <ul>STUDENTS(StId, StName, Major, Age)</ul>
-            <ul>AUTHORS(AName, Address)</ul>
-            <ul>borrows(DocId, StId, Date)</ul>
-            <ul>has-written(DocId, AName)</ul>
-            <ul>describes(DocId, Keyword)</ul>
-			<br>
-			</p>
-			<p>
-			<button onclick="hideShowDiv('q1');" class="btn">Hide/Show Question Set 1</button>
-			<button onclick="hideShowDiv('q2');" class="btn">Hide/Show Question Set 2</button>
-			<button onclick="hideShowDiv('q3');" class="btn">Hide/Show Question Set 3</button>
-			</p>
-			</p>
-			<div id="q1" style="display:none">
-			<h1><strong><u>Simple Relational Algebra Exercises</u></strong></h1>
-			<p>
-            1. List the year and title of each book
-            <br>
-            2. List all information about students whose major is CS
-            <br>
-            3. List all students with the books they can borrow
-            <br>
-            4. List all boox published by McGraw-Hill before 1990
-            <br>
-            5. List the name of those authors who are living in Davis
-            <br>
-            6. List the name of students who are older than 30 and who are not studying CS
-            <br>
-            7. Rename AName in the relation AUTHORS to Name
-			</p>
-			</div>
-			<div id="q2" style="display:none">
-			<h1><strong><u>Composed Query Exercises</u></strong></h1>
-			<p>
-			1. List the names of all students who have borrowed a book and who are CS majors
-            <br>
-            2. List the title of books written by the author 'Silberschatz'
-            <br>
-            3. Find the name of the youngest student
-            <br>
-            4. Find the title of the oldest book
-			</p>
-			</div>
-			<div id="q3" style="display:none">
-			<h1><strong><u>More Difficult Relational Algebra Exercises</u></strong></h1>
-			<p>
-			1. List each book with its keywords
-            <br>
-            2. List each student with the books he/she has borrowed
-            <br>
-            3. List the title of books written by the author 'Ullman'
-            <br>
-            4. List the authors of the books the student 'Smith' has borrowed
-            <br>
-            5. Which books have both keywords 'database' and 'programming'
-            <br>
-            6. Perform Query 4 but using assignments
-			</p>
-			</div>
-		</div>
-
-	</body>
-	
-	<script>
-	function hideShowDiv(divName) {
-	  var x = document.getElementById(divName);
-	  if (x.style.display == "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	</script>
-
+    <script src="../../js/script.js"></script>
+</body>
 </html>
