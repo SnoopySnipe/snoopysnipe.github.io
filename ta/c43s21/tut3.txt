@@ -1,0 +1,35 @@
+Part 1
+--------------------------------------------------
+
+1.
+a) n + m
+b) min(n, m)
+c) max(n - m, 0)
+
+2.
+(SELECT term FROM offering WHERE instructor = 'Suzuki')
+INTERSECT ALL
+(SELECT term FROM offering WHERE instructor = 'Jepson');
+
+3.
+(SELECT sid FROM took WHERE grade >= 85)
+UNION
+(SELECT sid
+FROM took, offering
+WHERE took.oid = offering.oid AND instructor = 'Atwood' AND grade >= 50);
+
+4.
+(SELECT term FROM offering)
+EXCEPT
+(SELECT term FROM offering WHERE dept = 'CSC' AND cnum = 369);
+
+5.
+(SELECT oid, 'high' AS results
+FROM took
+GROUP BY oid
+HAVING AVG(grade) >= 80)
+UNION
+(SELECT oid, 'low' AS results
+FROM took
+GROUP BY oid
+HAVING AVG(grade) < 60);
