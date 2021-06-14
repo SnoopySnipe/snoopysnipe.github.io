@@ -1,0 +1,68 @@
+Group By and Having
+--------------------------------------------------
+
+1.
+SELECT oid, avg(grade), min(grade), max(grade)
+FROM Took
+GROUP BY oid;
+
+2.
+Only the two on the right.
+Problem with top-left: ERROR: column reference "sid" is ambiguous
+Problem with bottom-left: ERROR: column "student.surname" must appear in the GROUP BY clause or be used in an aggregate function
+
+3.
+SELECT SID, min(grade)
+FROM Took
+GROUP BY sID
+HAVING AVG(grade) > 80;
+
+4.
+SELECT Student.sID, surname, avg(grade)
+FROM Student, Took
+WHERE Student.sID = Took.sID
+GROUP BY Student.sID
+HAVING count(grade) >= 10;
+
+5.
+SELECT sid, AVG(grade)
+FROM took
+WHERE grade >= 50
+GROUP BY sid
+HAVING count(*) >= 10;
+
+6.
+CREATE VIEW Seniors AS
+SELECT sid
+FROM Took
+WHERE grade >= 50
+GROUP BY sid
+HAVING count(*) >= 10;
+SELECT Seniors.sid, AVG(grade)
+FROM Seniors, Took
+WHERE seniors.sid = Took.sid
+GROUP BY Seniors.sid;
+
+7.
+Only the top two.
+Problem with bottom-left: ERROR: column "offering.dept" must appear in the GROUP BY clause or be used in an aggregate function
+Problem with bottom-right: ERROR: column "took.oid" must appear in the GROUP BY clause or be used in an aggregate function
+
+Joins
+--------------------------------------------------
+
+1.
+Only a and c.
+Problem with b: ERROR: syntax error at or near "distinct"
+
+2.
+If there were two students on the same campus with the same surname, their surname and campus would be repeated in the result of the first query, but not in the result of the second.
+
+3.
+SELECT sid, count(distinct dept)
+FROM Took JOIN Offering ON Took.oid = Offering.oid
+GROUP BY sid;
+
+4.
+a) SELECT * FROM One NATURAL RIGHT JOIN Two;
+b) SELECT * FROM One NATURAL LEFT JOIN Two;
